@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_intro_1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <EditText
+        android:id="@+id/usernameLabel"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+
+        android:layout_marginBottom="16dp"
+
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@color/bgcolorButtn"
+        android:textCursorDrawable="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passLabel"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/bgcolorButtn"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passConfirm"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/regButton"
+        app:layout_constraintEnd_toEndOf="@+id/passLabel"
+        app:layout_constraintStart_toStartOf="@+id/passLabel" />
+
+    <TextView
+        android:id="@+id/raspuns"
+        android:layout_width="209dp"
+        android:layout_height="108dp"
+        android:padding="30px"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/raspuns2"
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:padding="30px"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:text="" />
+
+    <Button
+        android:id="@+id/regButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/ic_defnextstep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="87dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_vector_16" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="94dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/ic_loot" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/usernameLabel"
+        app:layout_constraintEnd_toEndOf="@+id/usernameLabel"
+        app:layout_constraintStart_toStartOf="@+id/usernameLabel"
+        app:layout_constraintTop_toTopOf="@+id/usernameLabel"
+        app:srcCompat="@drawable/ic_rectangle_2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/passConfirm"
+        app:layout_constraintEnd_toEndOf="@+id/passConfirm"
+        app:layout_constraintStart_toStartOf="@+id/passConfirm"
+        app:layout_constraintTop_toTopOf="@+id/passConfirm"
+        app:srcCompat="@drawable/ic_rectangle_2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/passLabel"
+        app:layout_constraintEnd_toEndOf="@+id/passLabel"
+        app:layout_constraintStart_toStartOf="@+id/passLabel"
+        app:layout_constraintTop_toTopOf="@+id/passLabel"
+        app:srcCompat="@drawable/ic_rectangle_2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/usernameLabel"
+        app:layout_constraintEnd_toStartOf="@+id/usernameLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/usernameLabel"
+        app:srcCompat="@drawable/ic_group_17" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passLabel"
+        app:layout_constraintEnd_toStartOf="@+id/passLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/passLabel"
+        app:layout_constraintVertical_bias="0.527"
+        app:srcCompat="@drawable/ic_lock" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/passConfirm"
+        app:layout_constraintEnd_toStartOf="@+id/passConfirm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/passConfirm"
+        app:layout_constraintVertical_bias="0.527"
+        app:srcCompat="@drawable/ic_lock_double" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
